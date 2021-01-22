@@ -1,0 +1,243 @@
+@media (min-width: 1780px) {
+  .header--burger {
+    display: none;
+  }
+}
+
+.header {
+  background-color: var(--color-2);
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+}
+
+.header--header {
+  display: flex;
+}
+
+.header--nav {
+  display: flex;
+  position: relative;
+}
+
+.header--burger {
+  width: 30px;
+  height: 23px;
+  background: url(/img/Burger.svg) no-repeat center;
+  background-size: contain;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.header--burger.is--active {
+  background: url(/img/Burger1.svg) no-repeat center;
+  background-size: contain;
+}
+
+.header--burger:hover {
+  background: url(/img/Burger1.svg) no-repeat center;
+  background-size: contain;
+}
+
+
+.nav__header--list {
+  display: flex;
+}
+
+.item__head--link {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-text-1);
+}
+
+.search--btn {
+  /* position: absolute; */
+  width: 26px;
+  height: 26px;
+  background: url(/img/Search.svg) no-repeat center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+}
+
+.search--btn:hover {
+  transform: translateX(-1px);
+  background: url(/img/Search1.svg) no-repeat center;
+  background-size: contain;
+}
+
+
+/*  */
+
+
+@media (max-width: 567px) {
+  .header {
+    height: 45px;
+    margin-bottom: 1px;
+  }
+  .header--logo-img {
+    width: 97px;
+    height: 31px;
+    margin-top: 7.5px;
+  }
+  .header--burger {
+    width: 25px;
+    height: 19px;
+    margin-top: 14px;
+    margin-left: 168px;
+  }
+  .nav__header--list {
+    top: 5px;
+    right: 28px;
+  }
+}
+
+
+/*  */
+
+
+@media (min-width: 568px) and (max-width: 767px) {
+  .header {
+    height: 45px;
+    margin-bottom: 1px;
+  }
+  .header--logo-img {
+    width: 97px;
+    height: 31px;
+    margin-top: 7.5px;
+    margin-left: 5px;
+  }
+  .header--burger {
+    width: 25px;
+    height: 19px;
+    margin-top: 14px;
+    margin-left: 436px;
+  }
+  .nav__header--list {
+    top: 5px;
+    right: 28px;
+  }
+}
+
+
+/*  */
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    height: 69px;
+    margin-bottom: 1px;
+  }
+  .header--burger {
+    margin-top: 22px;
+    margin-left: 24px;
+    margin-right: 231px;
+  }
+  .nav__header--list {
+    top: 12px;
+    left: 53px;
+  }
+  .header--logo-img {
+    width: 150px;
+    height: 48.5px;
+    margin-top: 10px;
+  }
+  .search--btn {
+    margin-top: 22px;
+    margin-left: 235px;
+  }
+}
+
+
+/*  */
+
+
+@media (min-width: 1024px) and (max-width: 1779px) {
+  .header {
+    height: 99px;
+    margin-bottom: 1px;
+  }
+  .header--header {
+    padding-top: 29px;
+  }
+  .header--burger {
+    margin-top: 10px;
+    margin-right: 357px;
+  }
+  .b-menu__header--img {
+    margin-top: 10px;
+  }
+  .header--logo-img {
+    width: 150px;
+    height: 72px;
+    margin-top: -15px;
+  }
+  .search--btn {
+    margin-left: 363px;
+  }
+  .search--btn {
+    top: 39px;
+  }
+  .nav__header--list {
+    top: 0px;
+    left: 30px;
+  }
+}
+
+
+/*  */
+
+
+
+@media (min-width: 1780px) {
+  .header {
+    height: 94px;
+    margin-bottom: 1px;
+  }
+  .header--header {
+    padding-top: 8px;
+  }
+  .nav__header--list {
+    margin-left: 730px;
+  }
+  .list__header--item {
+    padding-top: 23px;
+  }
+  .list__header--item:nth-child(1) {
+    margin-right: 86px;
+  }
+  .list__header--item:nth-child(2) {
+    margin-right: 85px;
+  }
+  .list__header--item:nth-child(3) {
+    margin-right: 86px;
+  }
+  .list__header--item:nth-child(4) {
+    margin-right: 85.5px;
+  }
+  .list__header--item:nth-child(5) {
+    margin-right: 71px;
+  }
+  .search--btn {
+    float: right;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 1779px) {
+  .nav__header--list {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.733);
+    border: 2px solid var(--color-main-1);
+    border-radius: 10%;
+    z-index: 100;
+  }
+  .nav__header--list.is--active {
+    display: block;
+  }
+}
